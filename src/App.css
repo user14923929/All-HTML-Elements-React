@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+/* index.css */
+
+/* Сброс базовых отступов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  font-family: system-ui, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Общие контейнеры */
+.page {
   min-height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  max-width: 1000px;
+  margin: 0 auto 20px auto;
+}
+
+.header-inner {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* Навигация */
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #2563eb;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Основной контейнер */
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+
+/* Секции */
+.section {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.section article h3 {
+  margin-top: 12px;
+  font-size: 1.1rem;
+}
+
+/* Формы */
+input, select, textarea, button {
+  font: inherit;
+}
+
+input, select, textarea {
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-top: 4px;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #1e293b;
   color: white;
+  transition: background 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background: #334155;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Таблицы */
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid #cbd5e1;
+}
+
+th, td {
+  padding: 6px 10px;
+  text-align: left;
+}
+
+th {
+  background: #f1f5f9;
+}
+
+/* Прочее */
+blockquote {
+  padding: 10px;
+  margin: 10px 0;
+  border-left: 4px solid #2563eb;
+  background: #f1f5f9;
+}
+
+pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 10px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: monospace;
+  background: #f1f5f9;
+  color: #0f172a;
+  padding: 2px 4px;
+  border-radius: 4px;
 }
