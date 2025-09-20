@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 // All-HTML-Elements-React.jsx
 // Single-file React component demonstrating a wide set of HTML elements.
@@ -321,6 +322,7 @@ export default function AllHtmlElementsDemo() {
           <p>This demo contains many common HTML elements but not every obscure/obsolete tag (e.g., &lt;acronym&gt;, &lt;applet&gt;). Use it as a playground or documentation page.</p>
         </section>
       </main>
+      <SpeedInsights />
     </div>
   );
 }
