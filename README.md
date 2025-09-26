@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### License
 
-Click [here](https://github.com/user14923929/All-HTML-Elements-React/LICENSE) and read license
+Click [here](https://github.com/user14923929/All-HTML-Elements-React/blob/master/LICENSE) and read license
